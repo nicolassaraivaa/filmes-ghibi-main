@@ -14,7 +14,6 @@ const AddNotesModal = ({ movie, isOpen, onClose, onSave, savedNotes }) => {
   const [rating, setRating] = useState(0);
   const [notes, setNotes] = useState("");
 
-  // Carrega as informações salvas ao abrir o modal
   useEffect(() => {
     if (isOpen && movie) {
       const movieNotes = savedNotes?.[movie.id];
@@ -29,9 +28,9 @@ const AddNotesModal = ({ movie, isOpen, onClose, onSave, savedNotes }) => {
   }, [isOpen, movie, savedNotes]);
 
   const handleClose = () => {
-    setRating(0); // Reseta a avaliação
-    setNotes(""); // Reseta as notas
-    onClose(); // Chama a função de fechamento passada como prop
+    setRating(0); 
+    setNotes(""); 
+    onClose(); 
   };
 
   const handleSave = () => {
@@ -50,7 +49,7 @@ const AddNotesModal = ({ movie, isOpen, onClose, onSave, savedNotes }) => {
       return;
     }
 
-    onSave(movie.id, rating, notes); // Passa o ID do filme, a avaliação e as notas para a função de salvamento
+    onSave(movie.id, rating, notes); 
   };
 
   if (!isOpen || !movie) return null;

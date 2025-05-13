@@ -1,4 +1,4 @@
-import { SearchContainer } from "./styles";
+import { SearchContainer, SearchInput } from "./styles";
 import { useState } from "react";
 
 export function Search({ onSearchChange }) {
@@ -19,7 +19,7 @@ export function Search({ onSearchChange }) {
 
   return (
     <SearchContainer>
-      <Search
+      <SearchInput
         type="text"
         placeholder="Pesquisar Filmes..."
         value={searchText}

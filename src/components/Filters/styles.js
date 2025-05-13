@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   max-width: 1280px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
+
 
   p {
     font-size: 1.2rem;
@@ -30,7 +32,6 @@ export const Container = styled.section`
 
   @media (max-width: 768px) {
     padding: 0.5rem;
-    align-items: center;
   }
 `;
 
@@ -99,5 +100,9 @@ export const ClearButton = styled.button`
 
   &:hover {
     background-color: #d32f2f;
+  }
+
+  @media (max-width: 728px) {
+    width: 50%;
   }
 `;

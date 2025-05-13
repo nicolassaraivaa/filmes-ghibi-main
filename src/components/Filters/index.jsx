@@ -52,7 +52,6 @@ export function Filters({ onFilterChange, filters, onClearAll, onRemoveFilter })
         </select>
       </div>
 
-      {/* Exibe os filtros ativos */}
       <ActiveFilters>
         {filters.watched && (
           <span onClick={() => onRemoveFilter("watched")}>

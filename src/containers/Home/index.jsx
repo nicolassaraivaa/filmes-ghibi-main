@@ -2,6 +2,8 @@ import { useState } from "react";
 import { CardMovies } from "../../components/CardMovies";
 import { Filters } from "../../components/Filters";
 import { Search } from "../../components/Search";
+import Logo from "../../assets/logo-2.png";
+import { DivImage } from "./styles";
 
 function Home() {
   const [filters, setFilters] = useState({
@@ -44,6 +46,9 @@ function Home() {
 
   return (
     <main>
+      <DivImage>
+        <img src={Logo} alt="Logo" />
+      </DivImage>
       <Search onSearchChange={handleSearchChange} />
       <Filters
         onFilterChange={handleFilterChange}
