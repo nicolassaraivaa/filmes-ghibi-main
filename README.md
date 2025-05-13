@@ -53,22 +53,20 @@ Interação com filtros: aplique múltiplos critérios combinados.
 
 ## 📌 Passos para Executar
 
-1. **Clone o repositório**:
+1. ##  Clone o repositório:
+   ```bash
+   gh repo clone nicolassaraivaa/filmes-ghibi-main
+   cd filmes-ghibi-main
 
-```bash
-git clone https://github.com/seu-usuario/filmes-ghibli.git
-cd filmes-ghibli
+2. ## Instale as dependências:
+   ```bash
+   npm install
+   yarn install 
 
-2. **Instale as dependências**:
 
-```bash
-npm install
-
-3. **Inicie o servidor de desenvolvimento**:
-
-```bash
-npm run dev
-
----
+3. ## Instale as dependências:
+   ```bash
+   npm run dev
+   yarn dev
 
 
