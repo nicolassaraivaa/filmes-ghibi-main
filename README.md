@@ -64,7 +64,7 @@ Interação com filtros: aplique múltiplos critérios combinados.
    yarn install 
 
 
-3. ## Instale as dependências:
+3. ## Rode o projeto no terminal:
    ```bash
    npm run dev
    yarn dev
