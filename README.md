@@ -39,6 +39,15 @@ Projeto React que consome a API pública do [Studio Ghibli](https://ghibliapi.ve
 - **React Toastify** – Notificações toast
 - **Axios** – Requisições HTTP
 - **LocalStorage** – Persistência de favoritos, assistidos e notas
+- 
+---
+
+## 🧪 Demonstração
+Tela Inicial: lista de filmes com filtros e opções de ordenação.
+
+Modal de Notas: para adicionar/editar avaliação por estrela e anotações.
+
+Interação com filtros: aplique múltiplos critérios combinados.
 
 ---
 
@@ -62,11 +71,4 @@ npm run dev
 
 ---
 
-## 🧪 Demonstração
-Tela Inicial: lista de filmes com filtros e opções de ordenação.
 
-Modal de Notas: para adicionar/editar avaliação por estrela e anotações.
-
-Interação com filtros: aplique múltiplos critérios combinados.
-
----
