@@ -1,12 +1,72 @@
-# React + Vite
+# 🎥 Filmes Ghibli
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto React que consome a API pública do [Studio Ghibli](https://ghibliapi.vercel.app), permitindo que os usuários explorem filmes do estúdio com funcionalidades de pesquisa, filtros, notas e marcações de favoritos e assistidos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- 🔍 **Pesquisa de Filmes**
+  - Pesquise pelo título.
+  - Inclua sinopse na busca e destaque as palavras buscadas em amarelo.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🧰 **Filtros**
+  - Assistidos
+  - Favoritados
+  - Com notas
+  - Classificação por estrelas
+  - Ordenação por:
+    - Título (A-Z / Z-A)
+    - Duração (Menor / Maior)
+    - Avaliação do usuário
+    - Score da API
+  - Limpeza e remoção individual de filtros
+
+- ⭐ **Notas**
+  - Adicione, edite ou remova notas e classificações (1 a 5 estrelas) por filme
+
+- ❤️ **Favoritos e Assistidos**
+  - Marque e desmarque filmes
+  - Dados persistem via `localStorage`
+
+---
+
+## 📦 Tecnologias Utilizadas
+
+- **React** – Interface do usuário
+- **Styled-components** – Estilização dos componentes
+- **React Icons** – Ícones SVG
+- **React Toastify** – Notificações toast
+- **Axios** – Requisições HTTP
+- **LocalStorage** – Persistência de favoritos, assistidos e notas
+
+---
+
+## 📌 Passos para Executar
+
+1. **Clone o repositório**:
+
+```bash
+git clone https://github.com/seu-usuario/filmes-ghibli.git
+cd filmes-ghibli
+
+2. **Instale as dependências**:
+
+```bash
+npm install
+
+3. **Inicie o servidor de desenvolvimento**:
+
+```bash
+npm run dev
+
+---
+
+## 🧪 Demonstração
+Tela Inicial: lista de filmes com filtros e opções de ordenação.
+
+Modal de Notas: para adicionar/editar avaliação por estrela e anotações.
+
+Interação com filtros: aplique múltiplos critérios combinados.
+
+---
